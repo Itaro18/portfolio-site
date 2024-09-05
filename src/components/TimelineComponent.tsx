@@ -53,7 +53,7 @@ export function TimelineComponent() {
     },
   ];
   return (
-    <div className="w-full ">
+    <div className=" w-4/5 md:w-full ">
       
       <Timeline data={data} />
     </div>

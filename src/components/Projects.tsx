@@ -3,12 +3,12 @@ import ProjectCard from "./ui/projectCard"
 import { BackgroundBeams } from "./ui/background-beams"
 export default function Projects(){
     
-    return <div className="relative  w-full bg-black py-12 pb-36 mt-28 border-dashed border-y-2 border-white">
+    return <div className="relative w-full bg-black py-12 pb-36 mt-28 border-dashed border-y-2 border-white">
     <div className="  w-full flex flex-col justify-center items-center">
       <h1 className="  relative z-10 text-5xl text-white mb-20">
         Projects
       </h1>
-      <div className=" relative z-10 grid grid-cols-2 gap-y-10 items-center">
+      <div className=" relative z-10 grid grid-rows-4 md:grid-cols-2 md:grid-rows-2 gap-y-10 items-center justify-items-center">
         <ProjectCard src="/projects/editor.png" title="Collaborative Text Editor " description="Real-time collaborative text editor using React, Quill.js, and Socket.io, featuring Markdown support, rich text formatting, and MongoDB for persistent storage." tags={["ReactJS","Socket.io","MongoDB"]}/>
 
         <ProjectCard src="/projects/billBuddies.jpeg" title=" Bill Buddies(Splitwise for WEB 3)" description="Decentralized bill-splitting app on Solana, integrated with HD wallets , built using Next.js for frontend/backend, and PostgreSQL for data storage." tags={["NextJS","Solana","Postgres"]}/>
